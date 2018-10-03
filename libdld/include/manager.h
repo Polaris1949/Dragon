@@ -17,7 +17,7 @@ public:
     manager& push(const task& __x);
     manager& pop();
     bool execute();
-    bool execute_once();
+    bool execute_all();
 };
 
 }

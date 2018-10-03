@@ -42,7 +42,7 @@ execute()
 
 bool
 manager::
-execute_once()
+execute_all()
 {
     std::string __c{"curl"};
 
