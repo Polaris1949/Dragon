@@ -1,5 +1,5 @@
 object = manager.o task.o version.o
-rootdir = /cygdrive/d/develop/dragon/libdld
+rootdir = /cygdrive/d/develop/libdld
 bindir = $(rootdir)/bin
 incdir = $(rootdir)/include
 incdepdir = /cygdrive/d/develop
@@ -24,7 +24,7 @@ lib: $(object)
 	$(CXX) $(CXXFLAGS) $(object) -fPIC -shared -o $(libdyn) \
 		-Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker $(libimp)
 
-$(object): %.o: %.cpp
+$(object): %.o: %.cc
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 install:
