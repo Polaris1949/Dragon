@@ -90,6 +90,7 @@ operator << (const database& __db) const
         for (auto __it{__db.attr().cont().begin()};
                 __it != __db.attr().cont().end(); ++__it)
             __fs << __it->data();
+        __fs << (unsigned int){0};
     }
 
     // Read relation configurations
@@ -97,6 +98,7 @@ operator << (const database& __db) const
         for (auto __it{__db.rela().cont().begin()};
                 __it != __db.rela().cont().end(); ++__it)
             __fs << __it->left() << __it->right() << __it->data();
+        __fs << (unsigned int){0};
     }
 
     __fs.close();
