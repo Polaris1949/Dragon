@@ -32,7 +32,7 @@ execute()
     {
         task __t{this->current()};
         this->pop();
-        std::string __c{"curl -f -o "};
+        std::string __c{"curl -f -s -S -o "};
         __c += __t.loc() + ' ' + __t.url();
         if (system(__c.c_str())) return false;
     }
@@ -50,7 +50,7 @@ execute_all()
     {
         task __t{this->current()};
         this->pop();
-        __c += " -f -o " + __t.loc() + ' ' + __t.url();
+        __c += " -f -s -S -o " + __t.loc() + ' ' + __t.url();
     }
 
     return !system(__c.c_str());
