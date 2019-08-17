@@ -1,9 +1,9 @@
-#ifndef _LIBDLD_TASK_H
-#define _LIBDLD_TASK_H 1
+#ifndef _LIBDNL_TASK_H
+#define _LIBDNL_TASK_H 1
 
 #include <string>
 
-namespace dld
+namespace dnl
 {
 
 class task

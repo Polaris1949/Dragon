@@ -1,4 +1,4 @@
-#include <libdld.h>
+#include <libdnl.h>
 #define URL_ROOT "http://res.17roco.qq.com/res/combat/"
 
 int main()

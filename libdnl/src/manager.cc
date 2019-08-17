@@ -1,7 +1,7 @@
 #include "manager.h"
 #include <cstdlib>
 
-namespace dld
+namespace dnl
 {
 
 bool

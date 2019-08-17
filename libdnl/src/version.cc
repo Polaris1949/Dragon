@@ -1,10 +1,10 @@
 #include "version.h"
 
-namespace dld
+namespace dnl
 {
 
 const char*
 version()
-{ return LIBDLD_VERSION; }
+{ return LIBDNL_VERSION; }
 
 }

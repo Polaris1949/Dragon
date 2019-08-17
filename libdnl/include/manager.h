@@ -1,10 +1,10 @@
-#ifndef _LIBDLD_MANAGER_H
-#define _LIBDLD_MANAGER_H 1
+#ifndef _LIBDNL_MANAGER_H
+#define _LIBDNL_MANAGER_H 1
 
 #include <queue>
 #include "task.h"
 
-namespace dld
+namespace dnl
 {
 
 class manager
